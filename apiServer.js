@@ -4,7 +4,10 @@ var bodyParser = require('body-parser');
 const session = require('express-session');
 const MongoStore = require('connect-mongo')(session);
 
+// aws
 var connectionString = require('./config');
+
+// heroku
 //var connectionString = process.env.conn;
 
 var app = express();
