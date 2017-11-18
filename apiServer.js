@@ -4,8 +4,8 @@ var bodyParser = require('body-parser');
 const session = require('express-session');
 const MongoStore = require('connect-mongo')(session);
 
-//var connectionString = require('./config');
-var connectionString = process.env.conn;
+var connectionString = require('./config');
+//var connectionString = process.env.conn;
 
 var app = express();
 
